@@ -1,3 +1,5 @@
+const path= require('path');
+
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
@@ -23,8 +25,9 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));
  
-//TODO:crud: crear, actualizar, borrar
-
+app.use('*', (req, res) => {
+    res.sendFile( __dirname + '/public/index.html');
+});
 
 //escuchar peticiones
 
