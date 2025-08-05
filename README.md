@@ -13,4 +13,4 @@ cp .env.template .env
 4.	Correr eI servidor -npm start	
 5.	Correr et servidor en modo desarrollo "npm run dev"
 🌐 Demo en Vivo
-🔗 URL: https://backend-production.up.railway.app
+🔗 bakckend-production.up.railway.app
